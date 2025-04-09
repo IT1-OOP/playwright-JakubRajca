@@ -12,5 +12,7 @@ def test_page_title():
         page.goto(f"file://{cesta}")
         nadpis_1 = page.locator('h1').first
         expect(nadpis_1).to_be_visible()
+        
+
         browser.close()
         
